@@ -28,5 +28,10 @@ class Rover {
     $this->$y = 1;
     $this->$orientation = "North";
   }
+  public function ForwardWhenFacingSouth() {
+    $this->$x = 0;
+    $this->$y = -1;
+    $this->$orientation = "South";
+  }
 
 }

@@ -42,5 +42,16 @@ use PHPUnit\Framework\TestCase;
         $rover->getPositionAndOrientation()
       );
     }
+    public function testForwardWhenFacingSouth() {
+      $rover = new Rover(0, -1, "South");
+      $this->assertEquals(
+        array(
+          0,
+          -1,
+          "South"
+        ),
+        $rover->getPositionAndOrientation()
+      );
+    }
 
   }
