@@ -86,4 +86,15 @@ use PHPUnit\Framework\TestCase;
       $rover->getPositionAndOrientation()
     );
   }
+  public function testBackWardWhenFacingEast() {
+    $rover = new Rover (-1, 0, "East");
+    $this->assertEquals(
+      array(
+        -1,
+        0,
+        "East"
+      ),
+      $rover->getPositionAndOrientation()
+    );
+  }
   }
