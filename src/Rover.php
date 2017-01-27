@@ -68,4 +68,9 @@ class Rover {
         return $this->$orientation = "South";
       }
     }
+    public function MoveToRightWhenFacingSouth() {
+      if ($this->$orientation === "South") {
+        return $this->$orientation = "West";
+      }
+    }
 }
