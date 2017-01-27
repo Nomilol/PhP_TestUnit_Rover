@@ -58,5 +58,10 @@ class Rover {
     $this->$y = 0;
     $this->$orientation = "West";
   }
+  public function MoveToRightwhenFacingNorth() {
+    if ($this->$orientation === "North") {
+      return $this->$orientation = "East";
+    }
+  }
 
 }

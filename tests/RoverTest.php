@@ -108,4 +108,15 @@ use PHPUnit\Framework\TestCase;
       $rover->getPositionAndOrientation()
     );
   }
+  public function testMoveToRightWhenFacingNorth() {
+    $rover = new Rover (0, 0, "East");
+    $this->assertEquals(
+      array(
+        0,
+        0,
+        "East"
+      ),
+      $rover-> getPositionAndOrientation()
+    );
+  }
   }
