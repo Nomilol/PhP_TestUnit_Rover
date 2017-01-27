@@ -10,7 +10,7 @@ class Rover {
     $this->y = $y;
     $this->orientation = $orientation;
   }
-  public function getOrientation() {
+  public function getPositionAndOrientation() {
     return array(
       $this->x,
       $this->y,

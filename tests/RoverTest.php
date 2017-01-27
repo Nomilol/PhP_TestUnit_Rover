@@ -16,7 +16,7 @@ use PHPUnit\Framework\TestCase;
            0,
            "North"
         ),
-        $rover->getOrientation()
+        $rover->getPositionAndOrientation()
       );
     }
 
@@ -28,7 +28,19 @@ use PHPUnit\Framework\TestCase;
           1,
           "North"
         ),
-        $rover->getOrientation()
+        $rover->getPositionAndOrientation()
       );
     }
+    public function testForwardWhenFacingEast() {
+      $rover = new Rover(1, 0, "East");
+      $this->assertEquals(
+        array(
+          1,
+          0,
+          "East"
+        ),
+        $rover->getPositionAndOrientation()
+      );
+    }
+
   }
